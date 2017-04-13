@@ -1,6 +1,6 @@
 var playerInstance = jwplayer("algitv");
 playerInstance.setup({
-        file: "http://185.180.13.92/live/tv6/index.m3u8",
+        file: "http://185.180.13.92/live/tv69/index.m3u8",
         //file: "",
         image: '',
         skin: {
