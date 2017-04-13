@@ -1,1 +1,24 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('d g=2("3");g.B({5:"c://A.z.13.x/h/y/e.f",C:\'\',D:{5:\'\',I:\'H-G\',E:\'-7\',w:\'\'},J:{t:"l",j:"#k",m:"v",n:"#u"},8:6,s:\'r%\',o:\'16:9\',8:6,p:"q",F:\'P\',14:{K:"11",}});2("3").10(4(){8:6,2("3").1b([{5:"c://19.18.15.Y/h/Z/e.f"}]);2("3").b()});2().O(\'b\',4(){N(4(){d a=M.R(\'\'+2().S+\' .i-X-W-V .i-T-U\')[0];12(a)a.L=\'Q 1a 1\'},17)});',62,74,'||jwplayer|tv|function|file|true||autostart||textAlt|play|http|var|index|m3u8|playerInstance|live|jw|active|F91404|seven|inactive|background|aspectratio|stretching|exactfit|100|width|name|008E15|white|link|92|tv6|180|185|setup|image|logo|margin|primary|left|bottom|position|skin|client|innerHTML|document|setTimeout|on|html5|INDOSIAR|querySelectorAll|id|text|alt|group|center|controlbar|176|tv4|onError|vast|if||advertising|195||300|202|149|LINK|load'.split('|'),0,{}))
+var playerInstance = jwplayer("algitv");
+playerInstance.setup({
+        file: "http://185.180.13.92/live/tv6/index.m3u8",
+        //file: "",
+        image: '',
+        skin: {
+          name: "thin",
+    },
+        width: '100%',
+        aspectratio: '16:9',
+        stretching: "exactfit",
+        autostart: true,
+        androidhls: true,
+        primary: 'html5',
+        advertising: {
+        client: "vast",
+        admessage: 'Your TV will resume in XX seconds.',
+        tag: ""
+  }
+    });
+    jwplayer("tv").onError(function(){
+       jwplayer("tv").load([{file:"http://149.202.195.176/live/tv4/index.m3u8"}]);
+       jwplayer("tv").play();
+    });
