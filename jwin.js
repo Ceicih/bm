@@ -4,7 +4,7 @@ jwplayer("myElement").setup({
         title: 'Live Streaming',
         image: '',
         width: '100%',
-        height: '100%',
+        aspectratio: '16:9',
         stretching: "exactfit",
 	'logo':{'file':'', 'hide':'false', 'out':'0.3','position':'bottom-right','link':''},
         stretching: "exactfit",
