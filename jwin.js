@@ -1,26 +1,24 @@
-jwplayer("myElement").setup({
-        primary : 'flash',
+var playerInstance = jwplayer("algitv");
+playerInstance.setup({
         file: "http://185.180.13.92/live/tv111/index.m3u8",
-        title: 'Live Streaming',
+        //file: "",
         image: '',
+        skin: {
+          name: "thin",
+    },
         width: '100%',
-        aspectratio: '16:9',
-        stretching: "exactfit",
-	'logo':{'file':'', 'hide':'false', 'out':'0.3','position':'bottom-right','link':''},
+        height: '100%',
         stretching: "exactfit",
         autostart: true,
-        androidhls:true,
-        abouttext: "www.tvonline.id Player",
-        aboutlink: "http://www.tvonline.id/",
-        primary: 'flash',
+        androidhls: true,
+        primary: 'html5',
         advertising: {
         client: "vast",
-        'skipoffset':15,
         admessage: 'Your TV will resume in XX seconds.',
         tag: ""
   }
     });
-   jwplayer("tv").onError(function(){
+    jwplayer("tv").onError(function(){
        jwplayer("tv").load([{file:"http://149.202.195.176/live/tv4/index.m3u8"}]);
        jwplayer("tv").play();
     });
