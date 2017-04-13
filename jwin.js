@@ -7,7 +7,7 @@ playerInstance.setup({
           name: "thin",
     },
         width: '100%',
-        height: '100%',
+        aspectratio: '16:9',
         stretching: "exactfit",
         autostart: true,
         androidhls: true,
